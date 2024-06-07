@@ -55,61 +55,66 @@
           </div>
     </div>
     </div>
-    <header class="header">
-      <div id="toast"></div>
-      <div class="logo">
-        <img
-          src="/DACS-Project/img/logo_shop.png"
-          alt="logo"
-          style="width: 70%; height: 50px"
-        />
+    <header class= header>
+      <div class="logo home" onclick="getHone()"><a  href="#">CWR Shop</a></div>
+      <div class="search">
+        <input class="search-input" type="text" placeholder="search products" id="input">
+        <ion-icon class="s" name="search"></ion-icon>
+        <i class="close-search  fa-solid fa-xmark"></i>
+        <div class="search-content">
+  
       </div>
-      <div class="menu">
-        <li>
-          <a href="#">NỮ</a>
-          <ul class="sub-menu">
-            <li><a href="#">SẢN PHẨM MỚI</a></li>
-            <li><a href="#">ÁO</a></li>
-            <li><a href="#">QUẦN & VÁY</a></li>
-            <li><a href="#">FULL SET</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">NAM</a>
-          <ul class="sub-menu">
-            <li><a href="#">SẢN PHẨM MỚI</a></li>
-            <li><a href="#">ÁO PHÔNG</a></li>
-            <li><a href="#">QUẦN JEAN</a></li>
-            <li><a href="#">FULL SET</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">SALE</a>
-          <ul class="sub-menu">
-            <li><a href="#">SALE 10%</a></li>
-            <li><a href="#">SALE 25%</a></li>
-            <li><a href="#">SALE 50%</a></li>
-            <li><a href="#">SALE 70%</a></li>
-          </ul>
-        </li>
-        <li><a href="#">BST</a></li>
-        <li><a href="#">THÔNG TIN</a></li>
+  
       </div>
-      <div class="others">
-        <li>
-          <input type="text" />
-          <button href="#" onclick="search()">
-            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-          </button>
-        </li>
-        <li><button class="fa fa-user" href="#"></button></li>
-        <li>
-          <button
-            class="fa-solid fa-cart-shopping nav-button"
-            href="#"
-          ></button>
-        </li>
-        <li><button class="fa-solid fa-bell nav-button"></button></li>
+      <div class="heading">
+        <ul>
+          <li><a href="#" class="under home" onclick="getHone()">HOME</a></li>
+          <li><a href="#section2" class="under">SHOP</a></li>
+          <li><a href="#footer" class="under">CONTACT US</a></li>
+          <li><a class="btnlogin under">LOGIN</a></li>
+          <li><a class="btnsignin under">SIGN IN</a></li>
+        </ul>
+      </div>
+      <div class="cartfon">
+        <i class="cart-icon fa-solid fa-cart-shopping"></i>
+        <div class="cart"> 
+          <h2 class="cart-title">your cart</h2>
+          <div class="cart-content">
+          
+          </div>
+          <!--total-->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">0$</div>
+          </div>
+          <!--buy btn-->
+          <button type="button" class="btn-buy">payment</button>
+          <!--close icon-->
+          <button type="button" class="btn-history">purchase history</button>
+          <i class="clossig fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+  
+        <div class="history">
+          <h2 class="history-title">purchase history</h2>
+          <i class="clossig fa-solid fa-xmark" id="close-history"></i>
+          <div class="history-content">
+           
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="detail">
+        <h2>detail</h2>
+        <i class="clossig fa-solid fa-xmark" id="close-detail" ></i>
+        <img class="detail-img" src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+        <ul>
+          <li>title:Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</li>
+          <li>price: 109.95$</li>
+          <li>description:our perfect pack for e</li>
+          <li>category:men's clothing</li>
+          <li>rating:3.9 <i class="rating fa-solid fa-star"></i></li>
+        </ul>
       </div>
     </header>
     <section id="Slider">
